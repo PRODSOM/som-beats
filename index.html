@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>S.O.M Beats</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    body, html {
+      height: 100%;
+      color: #fff;
+    }
+
+    /* Landing Page */
+    .landing {
+      height: 100vh;
+      background: url('Landing Page Background.jpg') no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .landing h1 {
+      font-size: 4rem;
+      font-style: italic;
+      letter-spacing: 3px;
+      text-shadow: 0 0 25px rgba(255, 180, 80, 0.9);
+    }
+
+    .subtitle {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      font-style: italic;
+      opacity: 0.9;
+      text-shadow: 0 0 15px rgba(255, 200, 120, 0.7);
+      line-height: 1.6;
+    }
+
+    .enter-btn {
+      margin-top: 35px;
+      padding: 15px 45px;
+      font-size: 1.2rem;
+      border: 2px solid #ffb347;
+      background: rgba(0,0,0,0.2);
+      color: #fff;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: 0.4s;
+      box-shadow: 0 0 15px rgba(255, 180, 80, 0.5);
+    }
+
+    .enter-btn:hover {
+      background: #ffb347;
+      color: black;
+      box-shadow: 0 0 25px #ffb347, 0 0 50px rgba(255,140,0,0.8);
+      transform: scale(1.05);
+    }
+
+    .enter-btn:hover {
+      background: #ffb347;
+      color: black;
+      box-shadow: 0 0 20px #ffb347;
+    }
+
+    /* Main Site */
+    .main {
+      min-height: 100vh;
+      background: url('Main Site Background.jpg') no-repeat center/cover;
+      padding: 50px;
+      display: none;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 3rem;
+      font-style: italic;
+      margin-bottom: 50px;
+      text-shadow: 0 0 20px rgba(255, 200, 120, 0.9);
+    }
+
+    .beats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .beat-card {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .beat-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .beat-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .buy-btn {
+      padding: 12px 25px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      background: #ffb347;
+      color: black;
+      border-radius: 30px;
+      transition: 0.4s;
+    }
+
+    .buy-btn:hover {
+      box-shadow: 0 0 25px #ffb347, 0 0 50px #ff8c00;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Landing Page -->
+  <div class="landing" id="landing">
+    <h1>S.O.M Beats</h1>
+    <div class="subtitle">A Secret Oasis For True Artists<br>Sexy Tropical Beats</div>
+    <button class="enter-btn" onclick="enterSite()">Enter</button>
+  </div>
+
+  <!-- Main Site -->
+  <div class="main" id="main">
+    <div class="header">S.O.M Beats</div>
+
+    <div class="beats">
+      <div class="beat-card">
+        <div class="beat-title">Sunset Rhythm</div>
+        <button class="buy-btn">BUY - $10</button>
+      </div>
+
+      <div class="beat-card">
+        <div class="beat-title">Golden Waves</div>
+        <button class="buy-btn">BUY - $10</button>
+      </div>
+
+      <div class="beat-card">
+        <div class="beat-title">Flamenco Nights</div>
+        <button class="buy-btn">BUY - $10</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function enterSite() {
+      document.getElementById('landing').style.display = 'none';
+      document.getElementById('main').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
