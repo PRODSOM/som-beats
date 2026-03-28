@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Saudade – S.O.M Beats</title>
+  <title>Download – S.O.M Beats</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
     body {
       height: 100vh;
-      background: url('beat-landing.jpg') no-repeat center/cover;
+      background: url('download.gif') no-repeat center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -30,7 +30,6 @@
       padding: 40px;
       border-radius: 20px;
       backdrop-filter: blur(10px);
-      max-width: 400px;
     }
 
     h1 {
@@ -40,12 +39,7 @@
       text-shadow: 0 0 20px rgba(255,180,80,0.8);
     }
 
-    audio {
-      width: 100%;
-      margin-bottom: 25px;
-    }
-
-    .buy-btn {
+    .download-btn {
       padding: 15px 35px;
       border: none;
       font-size: 1.1rem;
@@ -54,9 +48,11 @@
       color: black;
       border-radius: 30px;
       transition: 0.4s;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    .buy-btn:hover {
+    .download-btn:hover {
       box-shadow: 0 0 25px #ffb347, 0 0 50px #ff8c00;
       transform: scale(1.05);
     }
@@ -65,15 +61,12 @@
 
 <body>
 
-    <div class="brand">S.O.M Beats</div>
-<h1>Saudade</h1>
+  <div class="container">
+    <h1>Thank You</h1>
+    <p>Your beat is ready.</p><br>
 
-    <audio controls>
-      <source src="saudade-preview.mp3" type="audio/mpeg">
-    </audio>
-
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=yhanlemaofficial@gmail.com&item_name=Saudade Beat&amount=10&currency_code=USD&return=https://prodsom.github.io/som-beats/download.html" target="_blank">
-      <button class="buy-btn">BUY - $10</button>
+    <a class="download-btn" href="PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank">
+      Download Saudade WAV
     </a>
   </div>
 
