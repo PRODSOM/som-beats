@@ -81,9 +81,12 @@
       text-shadow: 0 0 20px rgba(255, 200, 120, 0.9);
     }
 
+    /* 🔥 FIXED LAYOUT */
     .beats {
       display: flex;
       justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
     }
 
     .beat-card {
@@ -135,6 +138,8 @@
     <div class="header">S.O.M Beats</div>
 
     <div class="beats">
+
+      <!-- Saudade -->
       <div class="beat-card">
         <div class="beat-title">Saudade</div>
         <audio controls>
@@ -143,7 +148,10 @@
 
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=yhanlemaofficial@gmail.com&item_name=Saudade Beat&amount=10&currency_code=USD" target="_blank">
           <button class="buy-btn">BUY - $10</button>
+        </a>
+      </div>
 
+      <!-- Sunkofa -->
       <div class="beat-card">
         <div class="beat-title">Sunkofa</div>
         <audio controls>
@@ -152,11 +160,9 @@
 
         <a href="https://prodsom.github.io/som-beats/sunkofa-buy.html" target="_blank">
           <button class="buy-btn">BUY - $10</button>
-  </a>
-</div>
-          
         </a>
       </div>
+
     </div>
   </div>
 
@@ -169,4 +175,3 @@
 
 </body>
 </html>
-
