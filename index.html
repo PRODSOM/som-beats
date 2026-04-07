@@ -1,177 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>S.O.M Beats</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="beats">
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Cormorant Garamond', serif;
-    }
-
-    body, html {
-      height: 100%;
-      color: #fff;
-    }
-
-    .landing {
-      height: 100vh;
-      background: url('landing.jpg') no-repeat center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .landing h1 {
-      font-size: 4rem;
-      font-style: italic;
-      letter-spacing: 3px;
-      text-shadow: 0 0 25px rgba(255, 180, 80, 0.9);
-    }
-
-    .subtitle {
-      margin-top: 15px;
-      font-size: 1.3rem;
-      font-style: italic;
-      opacity: 0.9;
-      text-shadow: 0 0 15px rgba(255, 200, 120, 0.7);
-      line-height: 1.6;
-    }
-
-    .enter-btn {
-      margin-top: 35px;
-      padding: 15px 45px;
-      font-size: 1.2rem;
-      border: 2px solid #ffb347;
-      background: rgba(0,0,0,0.2);
-      color: #fff;
-      cursor: pointer;
-      border-radius: 30px;
-      transition: 0.4s;
-      box-shadow: 0 0 15px rgba(255, 180, 80, 0.5);
-    }
-
-    .enter-btn:hover {
-      background: #ffb347;
-      color: black;
-      box-shadow: 0 0 25px #ffb347, 0 0 50px rgba(255,140,0,0.8);
-      transform: scale(1.05);
-    }
-
-    .main {
-      min-height: 100vh;
-      background: url('main.jpg') no-repeat center/cover;
-      padding: 50px;
-      display: none;
-    }
-
-    .header {
-      text-align: center;
-      font-size: 3rem;
-      font-style: italic;
-      margin-bottom: 50px;
-      text-shadow: 0 0 20px rgba(255, 200, 120, 0.9);
-    }
-
-    /* 🔥 FIXED LAYOUT */
-    .beats {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .beat-card {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 25px;
-      border-radius: 15px;
-      backdrop-filter: blur(10px);
-      width: 300px;
-      text-align: center;
-    }
-
-    .beat-title {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .buy-btn {
-      padding: 12px 25px;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-      background: #ffb347;
-      color: black;
-      border-radius: 30px;
-      transition: 0.4s;
-    }
-
-    .buy-btn:hover {
-      box-shadow: 0 0 25px #ffb347, 0 0 50px #ff8c00;
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="landing" id="landing">
-    <h1>S.O.M Beats</h1>
-    <div class="subtitle">A Secret Oasis For True Artists<br>Sexy Tropical Beats</div>
-    <button class="enter-btn" onclick="enterSite()">Enter</button>
+  <!-- ARCHANGEL -->
+  <div class="beat-card">
+    <div class="beat-title">Archangel</div>
+    <audio controls>
+      <source src="archangel-preview.mp3" type="audio/mpeg">
+    </audio>
+    <a href="archangel-buy.html">
+      <button class="buy-btn">Unlock Beat – $10</button>
+    </a>
   </div>
 
-  <div class="main" id="main">
-    <div class="header">S.O.M Beats</div>
-
-    <div class="beats">
-
-      <!-- Saudade -->
-      <div class="beat-card">
-        <div class="beat-title">Saudade</div>
-        <audio controls>
-          <source src="saudade-preview.mp3" type="audio/mpeg">
-        </audio>
-
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=yhanlemaofficial@gmail.com&item_name=Saudade Beat&amount=10&currency_code=USD" target="_blank">
-          <button class="buy-btn">BUY - $10</button>
-        </a>
-      </div>
-
-      <!-- Sunkofa -->
-      <div class="beat-card">
-        <div class="beat-title">Sunkofa</div>
-        <audio controls>
-          <source src="sunkofa-preview.mp3" type="audio/mpeg">
-        </audio>
-
-        <a href="https://prodsom.github.io/som-beats/sunkofa-buy.html" target="_blank">
-          <button class="buy-btn">BUY - $10</button>
-        </a>
-      </div>
-
-    </div>
+  <!-- AR-15 -->
+  <div class="beat-card">
+    <div class="beat-title">AR-15</div>
+    <audio controls>
+      <source src="ar15-preview.mp3" type="audio/mpeg">
+    </audio>
+    <a href="ar15-buy.html">
+      <button class="buy-btn">Unlock Beat – $10</button>
+    </a>
   </div>
 
-  <script>
-    function enterSite() {
-      document.getElementById('landing').style.display = 'none';
-      document.getElementById('main').style.display = 'block';
-    }
-  </script>
+  <!-- CHROME -->
+  <div class="beat-card">
+    <div class="beat-title">Chrome</div>
+    <audio controls>
+      <source src="chrome-preview.mp3" type="audio/mpeg">
+    </audio>
+    <a href="chrome-buy.html">
+      <button class="buy-btn">Unlock Beat – $10</button>
+    </a>
+  </div>
 
-</body>
-</html>
+</div>
